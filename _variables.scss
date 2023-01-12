@@ -1,0 +1,15 @@
+@mixin mk-bdr($color){
+    border: 2px solid $color;
+}
+
+@mixin first-res(){
+    @media screen and (max-width: 800px){
+        @content;
+    }
+}
+
+@mixin second-res{
+    @media screen and (max-width:500px){
+        @content;
+    }
+}
